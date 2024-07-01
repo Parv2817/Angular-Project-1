@@ -1,0 +1,17 @@
+
+<section [ngStyle]="{ display: 'flex' }">
+
+    <figure [ngClass]="{
+        'patparvmPersonalCSS': patparvmImage1.patparvmNumber === 991718111
+      }">
+        <img src="{{patparvmImage1.patparvmImage}}" width="200px" height="200px" [ngStyle]="{marginTop: '10px'}">
+        <figcaption>{{patparvmImage1.patparvmName}}</figcaption>
+    </figure>
+
+    <figure [ngClass]="{
+        'patparvmCountryCSS': patparvmImage2.patparvmCountryId === 356
+      }">
+        <img src="{{patparvmImage2.patparvmImage}}" width="220px" height="220px">
+        <figcaption>{{patparvmImage2.patparvmCountryName}}</figcaption>
+    </figure>
+</section>

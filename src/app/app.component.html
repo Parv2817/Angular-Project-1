@@ -1,0 +1,36 @@
+<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<app-header-patparvm [patparvmChild]="PERpatparvm"></app-header-patparvm>
+
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" [ngStyle]="{textAlign: 'center'}">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      Tab #1 / patparvm (991718111)
+      <span class="material-symbols-outlined">
+        mood
+      </span>
+    </ng-template>
+    <app-patparvm-about [patparvmMe]="PERpatparvm"></app-patparvm-about>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      Tab #2 / patparvm (991718111)
+      <span class="material-symbols-outlined">
+        flag
+      </span>
+    </ng-template>
+    <app-patparvm-country [patparvmData]="CTRYpatparvm"></app-patparvm-country>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      Tab #3 / patparvm (991718111)
+      <span class="material-symbols-outlined">
+        photo_camera
+      </span>
+    </ng-template>
+    <app-patparvm-pics [patparvmImage1]="PERpatparvm" [patparvmImage2]="CTRYpatparvm"></app-patparvm-pics>
+  </mat-tab>
+</mat-tab-group>
